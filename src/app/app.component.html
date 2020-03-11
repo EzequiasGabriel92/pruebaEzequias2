@@ -1,0 +1,67 @@
+<div class="container">
+    <app-cabecera></app-cabecera>
+    
+    <router-outlet></router-outlet>
+   <!-- <ul>
+        <li class="text" *ngFor="let item of items | async">
+          {{item.name}}
+        </li>
+      </ul>-->
+
+
+    <app-footer></app-footer>
+    
+</div>
+
+<!--
+<h1 class="container bg-dark text-white text-center my-4 py-4" >ngif mostar={{mostar}}</h1>
+<div  class="container">
+    <button class="btn btn-warning mb-3"(click)="activo='primero'" >Accion texto1</button>
+    <button class="btn btn-danger mb-3" (click)="activo='segundo'">Accion texto2</button>
+    
+   
+   
+    <p class="text-info d-none" [ngClass]="{'d-block': activo =='primero'}">Antigüedad clásica es una expresión historiográfica1​ para referirse al período greco-romano de la Edad Antigua, un largo período histórico que se sitúa entre la Alta Antigüedad (la época de las primeras civilizaciones del Próximo Oriente Antiguo)2​ y la Baja Antigüedad (o Antigüedad Tardía); y que propiamente corresponde al mundo grecorromano: 
+        *ngIf="mostar; else nomostar"
+    </p>
+        <p class="text-danger d-none" [ngClass]="{'d-block': activo =='segundo'}"> Cuenca del Mediterráneo y el Próximo Oriente, áreas donde la antigua Grecia y la antigua Roma desarrollaron la civilización greco-romana. El término "clásico" significa "de mayor plenitud" o "modelo digno de imitación",3​ y su utilización para designar al período es marcadamente admirativa, a partir de una visión idealizada posterior sobre la época y su influencia en la conformación de la civilización occidental.
+        </p>
+           
+</div>
+
+
+<!--iterar variables
+<div class="container">
+    <label>Lista de Front: </label>
+
+    <ul>
+        <li *ngFor="let curso of cursos">{{curso}}</li>
+    </ul>
+
+</div>
+<!--Utilizar *ngFor para recorrer arregles
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">TIPO</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Edad</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr *ngFor="let animal of animales; index as i">
+                <th  scope="row">{{i+1}}</th>
+                <td>{{animal.TIPO}}</td>
+                <td>{{animal.nombre}}</td>
+                <td>{{animal.edad}}</td>
+            </tr>
+            
+
+        </tbody>
+    </table>
+</div>
+
+<!--Agregando rutas-->

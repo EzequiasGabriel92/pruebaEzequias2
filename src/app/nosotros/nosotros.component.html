@@ -1,0 +1,15 @@
+<div class="mt-5">
+    <h2>Nosotros</h2>
+    <p>Diseños y desarrollos RAMEN es una empresa dedicada al diseño grafico y al desarrollo web.</p>
+    <p>La empresa cuenta con dos personas capacidad para realizar su labor aca los presentamos.</p>
+    
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor= 'let item of equipo'>
+        <h5>{{item.nombre}} </h5>
+        <h6>Especialidad {{item.especialidad}}</h6>
+        <h6>Descripcion: {{item.descripcion}}</h6>   
+        </li>
+    
+      </ul>
+
+</div>
